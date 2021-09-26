@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BabyBeeOrderPage</title>
+    <link rel="stylesheet" href="OrderPageCSS.css" type="text/css">
+</head>
+
+<body id="background">
+    <header>
+        <Nav>
+            <div id="top-banner">
+
+                <img style="width:50px" ; src="Babyclothes/testbee.png">
+
+
+                <p id="Logo-name" data-text="BabyBee">BabyBee</p>
+
+
+            </div>
+
+            <ul class="navbar">
+                <li class="menu"><a href="Home.html">Home</a></li>
+                <li class="menu"><a href="Product.html">Products</a></li>
+                <li class="menu"><a href="OrderPage.html">OrderCart</a></li>
+                <li class="menu"><a href="AboutUs.html">AboutUs</a></li>
+                <li class="menu"><a href="ContactUs.html">ContactUs</a></li>
+            </ul>
+            <div id="scrollbar">
+                <marquee direction="right" scrollamount=5>
+                    Free shipping on all orders above $100
+                </marquee>
+            </div>
+        </Nav>
+    </header>
+
+    <section id="flex-container">
+
+        <div class="shopping-cart">
+
+            <div>
+                <table>
+                    <th style="text-align: left;width:150 px;font-size:20px">Shopping Cart</th>
+                    <th style=></th>
+                    <th style="text-align: right;font-size: 12px;width: 100px;">Price</th>
+                    <tr>
+                        <td style="width:150px;">
+                            <img class="shoppingcartproducts" src="Babyclothes/26642-1-1626327507.jpg">
+                        </td>
+                        <td>
+                            <div>
+                                <p>Kurta with Yellow vest</p>
+                                <p class="in-stock">In stock</p>
+                                <p>Qty 1</p>
+                            </div>
+                        </td>
+                        <td style="text-align: right;padding:5px;">$19.99</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img class="shoppingcartproducts" src="Babyclothes/27265-1-1630399452.jpg">
+                        </td>
+                        <td>
+                            <div>
+                                <p>Traditional Indian Skirt</p>
+                                <p class="in-stock">In stock</p>
+                                <p>Qty 1</p>
+                            </div>
+                        </td>
+                        <td style="text-align: right;padding:5px;">$29.99</td>
+                    </tr>
+
+    
+
+                    <tr>
+                        <td style="width:150px;">
+                            <img class="shoppingcartproducts" src="Babyclothes/26729-1-1626848079.jpg">
+                        </td>
+                        <td>
+                            <div>
+                                <p>Flower pattern Kurta</p>
+                                <p class="in-stock">In stock</p>
+                                <p>Qty 1</p>
+                            </div>
+                        </td>
+                        <td style="text-align: right;padding:5px;">$29.99</td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+
+            <div>
+                <img style="width:650px;height:400px;object-fit: cover;" src="Babyclothes/sale3.jpg">
+            </div>
+        </div>
+
+
+
+        <div>
+            <div id="creditcard">
+                <form style="padding: 10px;">
+                    <div style="display:inline-block;">
+                        <label for="Name">Name on card</label><br>
+                        <input type="text" name="CreditCardOwnerName" id="name">
+                    </div>
+                    <div style="display:inline-block;">
+                        <label for="cvv">CVV</label><br>
+                        <input type="text" name="CVV" id="cvv" maxlength="3" size="3">
+                    </div>
+
+                    <div style=>
+                        <label for="CardNo">Card No</label><br>
+                        <input type="text" name="CardNo." id="CardNo." maxlength="16" size="30">
+                    </div>
+
+                    <div style="display:inline-block;">
+                        <label for="expirationDate">Expiration Date</label><br>
+                        <input type="month" name="expirydate" id="expirydate" maxlength="16" size="30">
+                    </div>
+
+                    <div style="text-align: left;margin-top: 10px;">
+
+                        <input type="submit" name="confirm" value="Confirm" id="submit"
+                            style="font-family: sans-serif;width: 300px;background-color: rgb(4, 187, 178);color: white;border-radius: 6px;">
+                    </div>
+                </form>
+            </div>
+
+            <div style="width:400px;margin-left: 5px;">
+                <img style="width: 100%;" src="Babyclothes/sale4.jpg">
+            </div>
+
+            <div>
+                <img style="width:400px;height:320px;object-fit: cover;margin-left: 5px;"
+                    src="Babyclothes/diwalisale.jpg">
+            </div>
+
+        </div>
+
+
+        <div style="width:300px;height:250px;background-color: aqua;margin-top:20px;margin-right: 5px;">
+            <img style="width:100%;height:100%" src="Babyclothes/paymentmethod.png">
+
+            <div>
+                <img style="width:200px;margin-top: 40px;" src="Babyclothes/Western-Union-feather-flag-FFN-6020A-front-1.jpg.png">
+            </div>
+
+
+        </div>
+
+
+
+
+        <div id="SecondBlock">
+
+            <div id="payment">
+                <button
+                    style="border-radius: 5px;width: 50%;margin:auto;display:block;background-color:  rgb(255, 216, 20)">Place
+                    your order</button>
+                <p style="font-size: 12px;text-align: center;font-family: sans-serif; background-color: white;">
+                    By placing your order, you agree to BabyBee's privacy notice and conditions of use.
+                </p>
+
+                <table class="Order-Summary">
+                    <th>Order Summary</th>
+                    <th></th>
+                    <tr>
+                        <td>
+                            Items
+                        </td>
+                        <td class="cost">
+                            S$19.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Delivery
+                        </td>
+
+                        <td class="cost">
+                            S$0.00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="order-total">Order Total:</td>
+                        <td id="cost" class="cost">S$19.99</td>
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+
+
+            <div id="recommendation">
+                <table>
+                    <th
+                        style="color: rgb(15, 118, 236);text-decoration: underline orange;font-family:sans-serif;font-size: 15px;padding:10px;font-weight: 600;">
+                        Recommendations for you</th>
+
+                    <tr>
+                        <td>
+                            <img src="Babyclothes/27265-1-1630399452.jpg">
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="Babyclothes/3207680100_F_1_360x.jpg">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="Babyclothes/3471850700_MF_2_360x.jpg">
+
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <div id="footer">
+            <span>Copyright &copy BabyBee Inc. </span>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

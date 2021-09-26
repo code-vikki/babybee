@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WelcometoBabyBee</title>
+    <link rel="stylesheet" href="HomePageCSS.css" type="text/css">
+    <script>
+        function subscribeToNewsLetter() {
+            alert("Thanks for subscribing!!", "");
+        }
+
+    </script>
+</head>
+
+<body id="background">
+    <header>
+        <Nav>
+            <div id="top-banner">
+
+                <img style="width:50px" ; src="Babyclothes/testbee.png">
+
+
+                <p id="Logo-name" data-text="BabyBee">BabyBee</p>
+                <audio id="music" controls autoplay>
+                    <source src="/Babyclothes/keke.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+
+            </div>
+
+            <ul class="navbar">
+                <li class="menu"><a href="Home.html">Home</a></li>
+                <li class="menu"><a href="Product.html">Products</a></li>
+                <li class="menu"><a href="OrderPage.html">OrderCart</a></li>
+                <li class="menu"><a href="AboutUs.html">AboutUs</a></li>
+                <li class="menu"><a href="ContactUs.html">ContactUs</a></li>
+            </ul>
+            <div id="scrollbar">
+                <marquee direction="right" scrollamount=5>
+                    Free shipping on all orders above $100
+                </marquee>
+            </div>
+        </Nav>
+    </header>
+
+    <main id="container">
+
+
+        <div id="flexitem1">
+
+            <div id="slider">
+                <figure>
+                    <h1 class="slide_animate" id="desc_pos1">Block outdoor elements with functional outerwear</h1>
+                    <img src="Babyclothes/test1.png">
+                    <h1 class="slide_animate" id="desc_pos2">Chic look with bold colors for your princess</h1>
+                    <img src="Babyclothes/test2.png">
+                    <h1 class="slide_animate" id="desc_pos3">Quick drying tops for the athletic little ones</h1>
+                    <img src="Babyclothes/test3.png">
+                    <h1 class="slide_animate" id="desc_pos4">A comfortable cut for the outdoor</h1>
+                    <img src="Babyclothes/test4.png">
+                    <!-- <h1 class="slide_animate" id="desc_pos5">Block outdoor elements with functional outerwear</h1> -->
+                    <img src="Babyclothes/test1.png">
+                </figure>
+            </div>
+
+            <div id="secondrow">
+
+                <div class="block1 glow1 card">
+                    <h1>Innovation</h1>
+
+                    <img style="max-width: 100%;" src="Babyclothes/babyphotoshoot.jpg">
+
+
+
+                </div>
+
+                <div class="block2 glow2 ">
+                    <h2>Tradition</h2>
+                    <img style="max-width: 100%;" src="Babyclothes/bwkids2.jpg.png">
+
+                </div>
+
+
+                <div class="block3 glow3">
+                    <h1>Class</h1>
+                    <img style="max-width: 100%;" src="Babyclothes/bwkids.jpg">
+
+                </div>
+
+            </div>
+
+
+            <div id="thirdrow">
+
+                <div id="Customer-review">
+                    <h3>Customer Reviews</h3>
+                    <span class="rating">&#9733&#9733&#9733&#9734</span>
+                    <p class="review">"BabyBee is the best online shopping site for your kids! Keep up the good work"
+                    </p>
+                    <p class="reviewer">Tan Mei Ling</p>
+                    <span class="rating">&#9733&#9733&#9733&#9734</span>
+                    <p class="review">"Clothes were exactly as advertised"</p>
+                    <p class="reviewer">Boodhanayagan</p>
+                    <span class="rating">&#9733&#9733&#9734&#9734</span>
+                    <p class="review">"Very disappointed as the packaging is not good"</p>
+                    <p class="reviewer">Yang Mung Cheng</p>
+                    <span class="rating">&#9733&#9733&#9733&#9733</span>
+                    <p class="review">"My family and I are so indebted to BabyBee for their poignant selections"</p>
+                    <p class="reviewer">Lee Kuan Sew</p>
+                </div>
+
+
+                <img src="Babyclothes/customerreview.jpg">
+
+
+                <div style="width: 20%;background-color: orange;text-align: center;">
+                    <H3 style="font-family: PoppinsBold;">Sign up for our Newsletter</H3>
+                    <H4 style="font-style: lucida sans;">Stay up to date with our latest products</H4>
+
+                    <input
+                        style="border-radius: 5px;font-family: sans-serif;font-size: 16px;border-width: 10px;font-weight: 30px;"
+                        type="email" id="email" value="email">
+                    <br>
+                    <input
+                        style="border-radius: 20px;width:150px;font-family:lucida sans;;font-size: 16px;  border-width:5px;border-color: rgb(29, 26, 6);font-weight: 600;margin-top: 20px;cursor: pointer;"
+                        type="button" value="Submit" id="subscribe" name="subscription"
+                        onclick="subscribeToNewsLetter()">
+
+                    <div>
+                        <img style="width: 60%;margin-top: 40px;background-color: orange;"
+                            src="Babyclothes/beelogofinal.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div id="footer">
+            <span>Copyright &copy</span>
+        </div>
+    </footer>
+</body>
+
+
+</html>

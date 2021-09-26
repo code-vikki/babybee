@@ -1,0 +1,348 @@
+
+  @font-face {
+    font-family: KarlaBold;
+    src: url(Karla-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: PoppinsBold;
+    src: url(Poppins-ExtraBold.ttf);
+  }
+#scrollbar{
+
+    font-family: Karla;
+    font-size:18px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    color: rgb(255, 246, 246);
+    background-color:#2f333e;
+    padding:10px;
+
+}
+
+
+#background {
+    margin: 0;
+background-color: black;
+}
+
+
+#top-banner {
+   
+    height:80px;
+    border-bottom: 2px solid rgb(57, 54, 54);
+    border-top: 2px solid rgb(57, 54, 54);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.menu {
+
+    display:inline;
+    font-size: 16px;
+    font-family: Karla,sans-serif;
+    letter-spacing: 2px;
+    color: rgb(8, 1, 1);
+    
+ 
+    }
+
+#Logo {
+    width: 100px;
+    height: 80px;
+
+}
+
+#Logo-name {
+
+    display: inline-block;
+}
+
+#Logo-name{
+    position:relative;
+    font-family:PoppinsBold;
+    font-size: 50px;
+    color:252839;
+    -webkit-text-stroke: 1px #383d52;
+    text-transform: uppercase;
+   
+}
+
+#Logo-name::before{
+
+    content:attr(data-text);
+    position: absolute;
+  
+    color:rgba(255, 255, 4, 0.993);
+    /* color:#01fe87; */
+    -webkit-text-stroke:1px #383d52;
+    border-right:5px solid yellow;
+    
+    overflow: hidden;
+    animation:animate2 1.3s ease-in-out forwards;
+}
+
+@keyframes animate2
+{
+
+    0% 
+    {
+        width: 0;
+    
+    }
+
+   
+
+    100%{
+        
+      width:100%;
+     
+    }
+
+}
+
+.navbar {
+  
+  
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+a:link {
+    position: relative;
+    text-decoration:none;
+    color:rgb(255, 251, 251);
+
+}
+
+a:visited{
+     color:rgb(255, 255, 255);
+}
+
+a:hover{
+ 
+        font-family:KarlaBold;
+     
+       font-weight: 600;
+        color: rgb(255, 255, 255);
+    
+}
+
+
+a::after{
+    position: absolute;
+    content:"";
+    background-color: rgb(0, 0, 0);
+    width: 0%;
+    height:5px;
+    left:0;
+    bottom:-5px;
+    transition: 0.3s;
+}
+
+a:hover::after{
+    width:100%;
+    height:3px;
+    background-color: rgb(18, 208, 208);
+    
+    }
+
+
+#footer {
+    width: 100%;
+    font-weight: 800;
+
+    line-height: 5;
+    background-color:rgb(3, 6, 56);
+    color: rgb(235, 212, 11);
+    
+}
+
+#flex-container{
+ 
+    
+    display: flex;
+    padding:10px;
+    justify-content: space-around;
+}
+
+.shopping-cart{
+    /* background-color: rgb(241, 147, 147); */
+   
+    
+}
+
+.shopping-cart table{
+    
+    
+    border-spacing: 0;
+    border-collapse: collapse;
+    width:100%;
+    margin-top: 5px;
+ } 
+
+
+.shopping-cart p{
+    font-style: san serif;
+    font-size: 16px;
+    font-weight:500;
+}
+
+
+ .shopping-cart td, .shopping-cart th{
+    
+    color:white;
+    border-bottom: 2px solid rgb(185, 178, 178);
+    
+    
+ }
+
+ .in-stock{
+     color:green;
+ }
+
+ 
+ 
+
+.shoppingcartproducts{
+
+    width: 150px;
+    height:150px;
+    
+    margin:0;
+    object-fit: cover;
+}
+
+#SecondBlock{
+    width:20%;
+    
+    /* background-color: crimson; */
+
+}
+
+#payment_method{
+padding: 5px; 
+height:180px;
+width: 500px;
+position:absolute;
+left:175px;
+bottom:187px;
+object-fit: contain;
+
+}
+
+
+#payment{
+    box-sizing: border-box;
+    width:100%;
+    height:350px;
+    padding:10px;
+    border:1px solid rgb(182, 180, 180);
+    border-radius: 40px;
+    background-color: white;
+    margin-top: 20px;
+    position:relative;
+    /* background-color: rgb(134, 0, 139); */
+
+
+}
+
+.cost{
+    width:100%;
+    text-align: right;
+    background-color: white; 
+}
+
+.Order-Summary{
+
+    border-spacing: 5px;
+    
+}
+
+.Order-Summary th{
+    width:100%;
+    text-align: left;
+    border-bottom:2px solid rgb(179, 174, 174) ;
+    font-weight: 800;font-size: 18px;font-family: sans-serif;
+background-color: white;
+}
+
+.Order-Summary td{
+    padding:10px;
+    border-bottom:2px solid rgb(175, 172, 172) ;
+    background-color: white;
+}
+#order-total{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 0mm;
+}
+
+#cost{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 0mm;
+}
+
+
+
+
+#recommendation table{
+
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid rgb(207, 201, 201);
+    border-radius: 10px;
+    margin-top: 20px;
+ 
+    background-color: rgb(248, 247, 244);
+    /* background-color: darkblue; */
+}
+
+#recommendation img{
+
+    width: 150px;
+    height:150px;
+   
+    display: block;
+   
+    padding:5px;
+    margin:auto;
+    object-fit: cover;
+
+}
+
+#recommendation{
+
+ margin-left:auto;
+ margin-right: auto;
+ 
+}
+
+form {
+
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+#creditcard{
+    background-color:rgb(176, 231, 219);
+    border: 2px solid rgb(221, 218, 218);
+    
+    width:400px;
+    margin-top:20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    display:inline-block;
+    
+
+}
+
