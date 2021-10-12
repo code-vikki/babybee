@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>BabyBeeOrderPage</title>
     <link rel="stylesheet" href="OrderPageCSS.css" type="text/css">
+
+
+
 </head>
 
 <body id="background">
@@ -21,11 +24,40 @@
             </div>
 
             <ul class="navbar">
-                <li class="menu"><a href="Home.html">Home</a></li>
-                <li class="menu"><a href="Product.html">Products</a></li>
-                <li class="menu"><a href="OrderPage.html">OrderCart</a></li>
-                <li class="menu"><a href="AboutUs.html">AboutUs</a></li>
-                <li class="menu"><a href="ContactUs.html">ContactUs</a></li>
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-home-48.png">
+                    <a href="Home.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-t-shirt-48.png">
+                    <a href="Product.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-shopping-cart-256.png">
+                    <a href="OrderPage.html">
+                        Cart
+                    </a>
+
+                </li>
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-couple-64.png">
+                    <a href="AboutUs.html">
+                        AboutUs
+                    </a>
+                </li>
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-phone-64.png">
+                    <a href="ContactUs.html">
+                        ContactUs
+                    </a>
+                </li>
+            </ul>
             </ul>
             <div id="scrollbar">
                 <marquee direction="right" scrollamount=5>
@@ -72,11 +104,39 @@
                         <td style="text-align: right;padding:5px;">$29.99</td>
                     </tr>
 
-    
+
 
                     <tr>
                         <td style="width:150px;">
                             <img class="shoppingcartproducts" src="Babyclothes/26729-1-1626848079.jpg">
+                        </td>
+                        <td>
+                            <div>
+                                <p>Flower pattern Kurta</p>
+                                <p class="in-stock">In stock</p>
+                                <p>Qty 1</p>
+                            </div>
+                        </td>
+                        <td style="text-align: right;padding:5px;">$29.99</td>
+                    </tr>
+
+                    <tr>
+                        <td style="width:150px;">
+                            <img class="shoppingcartproducts" src="Babyclothes/27139-1-1629526268.jpg">
+                        </td>
+                        <td>
+                            <div>
+                                <p>Flower pattern Kurta</p>
+                                <p class="in-stock">In stock</p>
+                                <p>Qty 1</p>
+                            </div>
+                        </td>
+                        <td style="text-align: right;padding:5px;">$29.99</td>
+                    </tr>
+
+                    <tr>
+                        <td style="width:150px;">
+                            <img class="shoppingcartproducts" src="Babyclothes/3270617200_F_1_360x.jpg">
                         </td>
                         <td>
                             <div>
@@ -93,33 +153,35 @@
 
 
 
-            <div>
-                <img style="width:650px;height:400px;object-fit: cover;" src="Babyclothes/sale3.jpg">
-            </div>
+
         </div>
 
 
 
         <div>
             <div id="creditcard">
-                <form style="padding: 10px;">
+                <form name="CC" style="padding: 10px;" onsubmit="creditcardSubmission();return false">
                     <div style="display:inline-block;">
                         <label for="Name">Name on card</label><br>
-                        <input type="text" name="CreditCardOwnerName" id="name">
+                        <input type="text" name="CreditCardOwnerName" id="name" required
+                            onblur="this.style.backgroundColor='white'" onfocus="this.style.backgroundColor='yellow'">
                     </div>
                     <div style="display:inline-block;">
                         <label for="cvv">CVV</label><br>
-                        <input type="text" name="CVV" id="cvv" maxlength="3" size="3">
+                        <input type="text" name="CVV" id="cvv" maxlength="3" size="3" required
+                            onblur="this.style.backgroundColor='white'" onfocus="this.style.backgroundColor='yellow'">
                     </div>
 
                     <div style=>
                         <label for="CardNo">Card No</label><br>
-                        <input type="text" name="CardNo." id="CardNo." maxlength="16" size="30">
+                        <input type="text" name="CardNo" id="CardNo" maxlength="16" size="30" required
+                            onblur="this.style.backgroundColor='white'" onfocus="this.style.backgroundColor='yellow'">
                     </div>
 
                     <div style="display:inline-block;">
                         <label for="expirationDate">Expiration Date</label><br>
-                        <input type="month" name="expirydate" id="expirydate" maxlength="16" size="30">
+                        <input type="month" name="expirydate" id="expirydate" maxlength="16" size="30" required
+                            onblur="this.style.backgroundColor='white'" onfocus="this.style.backgroundColor='yellow'">
                     </div>
 
                     <div style="text-align: left;margin-top: 10px;">
@@ -135,18 +197,77 @@
             </div>
 
             <div>
-                <img style="width:400px;height:320px;object-fit: cover;margin-left: 5px;"
+                <img style="width:400px;height:220px;object-fit: cover;margin-left: 5px;"
                     src="Babyclothes/diwalisale.jpg">
             </div>
 
         </div>
 
 
-        <div style="width:300px;height:250px;background-color: aqua;margin-top:20px;margin-right: 5px;">
+        <div style="width:300px;height:350px;background-color: aqua;margin-top:20px;margin-right: 5px;">
             <img style="width:100%;height:100%" src="Babyclothes/paymentmethod.png">
 
-            <div>
-                <img style="width:200px;margin-top: 40px;" src="Babyclothes/Western-Union-feather-flag-FFN-6020A-front-1.jpg.png">
+            <div style="color: rgb(255, 255, 255); width:300px; margin-top:10px; ">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <h1
+                            style="top:110px; text-shadow: 0 0 20px #f40317,0 0 20px  #f40317,0 0 40px  #f40317,0 0 80px  #f40317, 0 0 160px  #f40317;">
+                            Keep clicking to claim you Gift</h1>
+                        <img src="Babyclothes/free gift.jpg" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Babyclothes/gift1.png" height=440 style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Babyclothes/gift2.png" height=440 style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Babyclothes/gift3.png" height=440 style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Babyclothes/gift4.png" height=440 style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Babyclothes/gift5.png" height=440 style="width:100%">
+
+                    </div>
+
+
+                    <div class="mySlides fade">
+                        <img src="Babyclothes/gift6.png" height=440 style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Babyclothes/gift7.png" height=440 style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Babyclothes/gift8.png" height=440 style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Babyclothes/Giftlast.png" height=440 style="width:100%">
+
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
             </div>
 
 
@@ -158,9 +279,8 @@
         <div id="SecondBlock">
 
             <div id="payment">
-                <button
-                    style="border-radius: 5px;width: 50%;margin:auto;display:block;background-color:  rgb(255, 216, 20)">Place
-                    your order</button>
+                <input type="submit" onclick="placeorder()" value="Place Your Order"
+                    style="border-radius: 5px;width: 50%;margin:auto;display:block;background-color:  rgb(255, 216, 20);font-weight: bold;"></input>
                 <p style="font-size: 12px;text-align: center;font-family: sans-serif; background-color: white;">
                     By placing your order, you agree to BabyBee's privacy notice and conditions of use.
                 </p>
@@ -173,7 +293,7 @@
                             Items
                         </td>
                         <td class="cost">
-                            S$19.99
+                            S$139.95
                         </td>
                     </tr>
                     <tr>
@@ -187,7 +307,7 @@
                     </tr>
                     <tr>
                         <td id="order-total">Order Total:</td>
-                        <td id="cost" class="cost">S$19.99</td>
+                        <td id="cost" class="cost"> S$139.95</td>
                     </tr>
 
 
@@ -198,33 +318,21 @@
 
 
             <div id="recommendation">
-                <table>
-                    <th
-                        style="color: rgb(15, 118, 236);text-decoration: underline orange;font-family:sans-serif;font-size: 15px;padding:10px;font-weight: 600;">
-                        Recommendations for you</th>
 
-                    <tr>
-                        <td>
-                            <img src="Babyclothes/27265-1-1630399452.jpg">
+                <div
+                    style="color: rgb(15, 118, 236);text-decoration: underline orange;font-family:'Times New Roman';font-size: 25px;padding:10px;font-weight: 600;">
+                    Recommendations for you
+                </div>
 
-                        </td>
-                    </tr>
+                <figure class="imgslider">
+                    <img src="Babyclothes/27265-1-1630399452.jpg">
+                    <img src="Babyclothes/3207680100_F_1_360x.jpg">
+                    <img src="Babyclothes/3471850700_MF_2_360x.jpg">
+                    <img src="Babyclothes//27139-1-1629526268.jpg">
+                    <img src="Babyclothes//27056-1-1628854192.jpg">
+                    <img src="Babyclothes/27265-1-1630399452.jpg">
+                </figure>
 
-                    <tr>
-                        <td>
-                            <img src="Babyclothes/3207680100_F_1_360x.jpg">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="Babyclothes/3471850700_MF_2_360x.jpg">
-
-                        </td>
-                    </tr>
-
-
-                </table>
             </div>
 
 
@@ -236,9 +344,116 @@
 
     <footer>
         <div id="footer">
-            <span>Copyright &copy BabyBee Inc. </span>
+            <div style="text-align: right;">
+                <img style="height:40px;border: 1px solid white;border-radius: 6px;"
+                    src="Babyclothes/downloadonapple.png">
+                <img style="height:40px" src="Babyclothes/1200px-Google_Play_Store_badge_EN.svg.png">
+
+            </div>
+            <hr style="border: 1px solid white;">
+            <div style="padding: 10px;color: white;">© 2021 BabyBee (SG) | Terms & conditions | Privacy | Cookies |
+                Accessibility | Modern Slavery
+                Act</div>
         </div>
     </footer>
+
+
+
+    <script>
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+        }
+
+    </script>
+
+
+    <script>
+
+        var order;
+
+        function creditcardSubmission() {
+
+            if (formvalidation()) {
+                alert("Thanks for submitting your details \n You can now place your order");
+                order = true;
+            }
+
+
+
+        }
+
+        function formvalidation() {
+
+            var cvv = document.forms[0]["CVV"].value;
+            var cardNum = document.forms[0]["CardNo"].value;
+
+
+            if (cvv.length < 3) {
+                alert("CVV must be at least 3 digits");
+                return false;
+            }
+
+            if (cardNum.length < 16) {
+                alert("Credit Card number must be 16 digits");
+                return false;
+            }
+
+            return true;
+
+        }
+
+        function placeorder() {
+
+
+            if (order) {
+                alert("Order successfully placed");
+                window.open("Product.html");
+                
+
+            }
+
+            else {
+
+                alert("Fill up your credit card details");
+                var name = document.forms[0]["CreditCardOwnerName"];
+                name.focus();
+                name.style.backgroundColor = "yellow";
+
+            }
+
+
+
+        }
+
+
+    </script>
+
 
 </body>
 

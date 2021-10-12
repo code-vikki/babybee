@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <title>WelcometoBabyBee</title>
     <link rel="stylesheet" href="HomePageCSS.css" type="text/css">
+
+
+
     <script>
         function subscribeToNewsLetter() {
-            alert("Thanks for subscribing!!", "");
+            var email = document.forms[0]["email"];
+            if (email.value != "email" && email.value != "") {
+                alert("You have successfully subscribed to our Newsletter!!");
+                window.open("Product.html");
+
+            } else {
+                alert("Enter email please!!");
+            }
         }
 
+
+
     </script>
+
+
+
+
 </head>
 
 <body id="background">
@@ -18,23 +34,51 @@
         <Nav>
             <div id="top-banner">
 
-                <img style="width:50px" ; src="Babyclothes/testbee.png">
+                <img style="width:50px" src="Babyclothes/testbee.png">
 
 
                 <p id="Logo-name" data-text="BabyBee">BabyBee</p>
-                <audio id="music" controls autoplay>
-                    <source src="/Babyclothes/keke.mp3" type="audio/mp3">
+                <audio id="music" controls loop>
+                    <source src="Babyclothes/keke.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
 
             </div>
 
             <ul class="navbar">
-                <li class="menu"><a href="Home.html">Home</a></li>
-                <li class="menu"><a href="Product.html">Products</a></li>
-                <li class="menu"><a href="OrderPage.html">OrderCart</a></li>
-                <li class="menu"><a href="AboutUs.html">AboutUs</a></li>
-                <li class="menu"><a href="ContactUs.html">ContactUs</a></li>
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-home-48.png">
+                    <a href="Home.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-t-shirt-48.png">
+                    <a href="Product.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-shopping-cart-256.png">
+                    <a href="OrderPage.html">
+                        Cart
+                    </a>
+
+                </li>
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-couple-64.png">
+                    <a href="AboutUs.html">
+                        AboutUs
+                    </a>
+                </li>
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-phone-64.png">
+                    <a href="ContactUs.html">
+                        ContactUs
+                    </a>
+                </li>
             </ul>
             <div id="scrollbar">
                 <marquee direction="right" scrollamount=5>
@@ -59,7 +103,7 @@
                     <img src="Babyclothes/test3.png">
                     <h1 class="slide_animate" id="desc_pos4">A comfortable cut for the outdoor</h1>
                     <img src="Babyclothes/test4.png">
-                    <!-- <h1 class="slide_animate" id="desc_pos5">Block outdoor elements with functional outerwear</h1> -->
+
                     <img src="Babyclothes/test1.png">
                 </figure>
             </div>
@@ -68,8 +112,10 @@
 
                 <div class="block1 glow1 card">
                     <h1>Innovation</h1>
+                    <h2>From biodegradable glitter to fabrics made from seaweed or orange fibres – these are the next
+                        generation of fashion products</h2>
 
-                    <img style="max-width: 100%;" src="Babyclothes/babyphotoshoot.jpg">
+                    <a href="Product.html"> <img style="max-width: 100%;" src="Babyclothes/babyphotoshoot.jpg"></a>
 
 
 
@@ -77,21 +123,76 @@
 
                 <div class="block2 glow2 ">
                     <h2>Tradition</h2>
-                    <img style="max-width: 100%;" src="Babyclothes/bwkids2.jpg.png">
+                    <h3>In a world full of trends, we want to remain classic sometimes</h3>
+
+                    <a href="Product.html"> <img style="max-width: 100%; " src="Babyclothes/bwkids2.jpg.png"></a>
 
                 </div>
 
 
                 <div class="block3 glow3">
                     <h1>Class</h1>
-                    <img style="max-width: 100%;" src="Babyclothes/bwkids.jpg">
+                    <h2>Being Classy isn't a choice. Its a lifestyle</h2>
+
+                    <a href="Product.html"> <img style="max-width: 100%;" src="Babyclothes/bwkids.jpg"></a>
 
                 </div>
 
             </div>
 
-
             <div id="thirdrow">
+
+                <div style="background-color:brown ; width: 100%;position: absolute;">
+
+                    <img style="width:25%;position: absolute;" src="Babyclothes/Bee1.png">
+
+
+                </div>
+
+                <div id="leftdoor">
+
+
+
+                    <div style="text-align: end;">
+
+                        <img src="Babyclothes/leftreddoor2.jpg">
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="halloween">
+
+
+                    <a href="Product.html"><img src="Babyclothes/halloweenGif2.gif"></a>
+
+
+                </div>
+
+
+
+                <div id="rightdoor">
+
+                    <div>
+                        <img src="Babyclothes/rightreddoor2.jpg">
+
+                    </div>
+                </div>
+
+
+                <div style=" width: 1%;">
+
+                    <img style="width:25%;position:absolute;right:10px;" src="Babyclothes/wear.png">
+
+
+                </div>
+
+
+            </div>
+
+            <div id="fourthrow">
 
                 <div id="Customer-review">
                     <h3>Customer Reviews</h3>
@@ -117,22 +218,23 @@
                 <div style="width: 20%;background-color: orange;text-align: center;">
                     <H3 style="font-family: PoppinsBold;">Sign up for our Newsletter</H3>
                     <H4 style="font-style: lucida sans;">Stay up to date with our latest products</H4>
-
-                    <input
-                        style="border-radius: 5px;font-family: sans-serif;font-size: 16px;border-width: 10px;font-weight: 30px;"
-                        type="email" id="email" value="email">
-                    <br>
-                    <input
-                        style="border-radius: 20px;width:150px;font-family:lucida sans;;font-size: 16px;  border-width:5px;border-color: rgb(29, 26, 6);font-weight: 600;margin-top: 20px;cursor: pointer;"
-                        type="button" value="Submit" id="subscribe" name="subscription"
-                        onclick="subscribeToNewsLetter()">
-
+                    <form name="newsletter">
+                        <input
+                            style="border-radius: 5px;font-family: sans-serif;font-size: 16px;border-width: 10px;font-weight: 30px;"
+                            type="email" name="email" id="email" value="email" required>
+                        <br>
+                        <input
+                            style="border-radius: 20px;width:150px;font-family:lucida sans;;font-size: 16px;  border-width:5px;border-color: rgb(29, 26, 6);font-weight: 600;margin-top: 20px;cursor: pointer;"
+                            type="submit" value="Submit" id="subscribe" name="subscription"
+                            onclick="subscribeToNewsLetter();">
+                    </form>
                     <div>
                         <img style="width: 60%;margin-top: 40px;background-color: orange;"
                             src="Babyclothes/beelogofinal.png">
                     </div>
 
                 </div>
+
 
             </div>
 
@@ -148,8 +250,18 @@
 
     <footer>
         <div id="footer">
-            <span>Copyright &copy</span>
-        </div>
+            <div>
+
+                <div style="text-align: right;">
+                    <img style="height:40px" src="Babyclothes/downloadonapple.png">
+                    <img style="height:40px" src="Babyclothes/1200px-Google_Play_Store_badge_EN.svg.png">
+
+                </div>
+                <hr style="border: 1px solid black;">
+                <div style="padding: 10px;">© 2021 BabyBee (SG) | Terms & conditions | Privacy | Cookies | Accessibility
+                    | Modern Slavery
+                    Act</div>
+            </div>
     </footer>
 </body>
 

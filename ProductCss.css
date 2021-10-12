@@ -6,7 +6,7 @@
 
   @font-face {
     font-family: PoppinsBold;
-    src: url(Poppins-ExtraBold.ttf);
+    src: url(Poppins/Poppins-ExtraBold.ttf);
   }
 #scrollbar{
 
@@ -42,6 +42,7 @@ background-color: black;
 .menu {
 
     display:inline;
+    text-align: center;
     font-size: 16px;
     font-family: Karla,sans-serif;
     letter-spacing: 2px;
@@ -64,13 +65,12 @@ background-color: black;
 #Logo-name{
     position:relative;
     font-family:PoppinsBold;
-    font-size: 50px;
+    font-size: 60px;
     color:252839;
     -webkit-text-stroke: 1px #383d52;
     text-transform: uppercase;
    
 }
-
 #Logo-name::before{
 
     content:attr(data-text);
@@ -114,12 +114,13 @@ background-color: black;
 
 #footer {
     width: 100%;
-    font-weight: 800;
     
-    line-height: 5;
-    background-color:rgb(3, 6, 56);
-    color: rgb(235, 212, 11);
-  
+    text-align: center;
+    box-sizing:border-box;
+    padding:20px;
+    background-color:rgb(241, 188, 14);
+      
+    border-top: 1px solid black;
 }
 
     main {
@@ -181,8 +182,8 @@ background-color: black;
    #productcart button{
        
      background-color: rgb(241, 188, 14);
-     font-family:lucida sans;
-     font-weight: 20px;
+     font-family:sans-serif;
+     font-weight: bold;
    
    }
 
@@ -258,8 +259,9 @@ background-color: black;
     
     a:hover::after{
         width:100%;
+        left:0%;
         height:3px;
-        background-color: rgb(18, 208, 208);
+        background-color: rgb(208, 18, 183);
         
         }
         

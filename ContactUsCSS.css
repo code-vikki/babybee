@@ -6,7 +6,7 @@
 
   @font-face {
     font-family: PoppinsBold;
-    src: url(Poppins-ExtraBold.ttf);
+    src: url(Poppins/Poppins-ExtraBold.ttf);
   }
 #scrollbar{
 
@@ -42,6 +42,7 @@
 .menu {
 
     display:inline;
+    text-align: center;
     font-size: 16px;
     font-family: Karla,sans-serif;
     letter-spacing: 2px;
@@ -61,10 +62,11 @@
     display: inline-block;
 }
 
+
 #Logo-name{
     position:relative;
     font-family:PoppinsBold;
-    font-size: 50px;
+    font-size: 60px;
     color:252839;
     -webkit-text-stroke: 1px #383d52;
     text-transform: uppercase;
@@ -111,6 +113,19 @@
     justify-content:space-evenly;
     
 }
+
+#footer {
+    width: 100%;
+    
+    text-align: center;
+    box-sizing:border-box;
+    padding:20px;
+    background-color:#0e3742;
+    color: rgb(255, 255, 255);  
+    border-top: 1px solid black;
+}
+
+
 a:link {
     position: relative;
     text-decoration:none;
@@ -145,21 +160,14 @@ a::after{
 
 a:hover::after{
     width:100%;
+    left:0%;
     height:3px;
-    background-color: rgb(18, 208, 208);
+    background-color: rgb(208, 18, 183);
     
     }
 
 
-#footer {
-    width: 100%;
-    font-weight: 800;
-   
-    line-height: 5;
-    background-color:rgb(3, 6, 56);
-    color: rgb(235, 212, 11);
-    
-}
+
 
 .container{
 

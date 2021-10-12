@@ -1,7 +1,3 @@
-@font-face {
-    font-family: Karla;
-    src: url(Karla-Regular.ttf);
-  }
 
   @font-face {
     font-family: KarlaBold;
@@ -10,7 +6,7 @@
 
   @font-face {
     font-family: PoppinsBold;
-    src: url(Poppins-ExtraBold.ttf);
+    src: url(Poppins/Poppins-ExtraBold.ttf);
   }
 #scrollbar{
 
@@ -46,6 +42,7 @@ background-color: black;
 .menu {
 
     display:inline;
+    text-align: center;
     font-size: 16px;
     font-family: Karla,sans-serif;
     letter-spacing: 2px;
@@ -68,7 +65,7 @@ background-color: black;
 #Logo-name{
     position:relative;
     font-family:PoppinsBold;
-    font-size: 50px;
+    font-size: 60px;
     color:252839;
     -webkit-text-stroke: 1px #383d52;
     text-transform: uppercase;
@@ -116,14 +113,15 @@ background-color: black;
     
 }
 
-
 #footer {
     width: 100%;
-    font-weight: 800;
-    padding:10px;
-    line-height: 5;
-    background-color:rgb(3, 6, 56);
-    color: rgb(235, 212, 11);
+    
+    text-align: center;
+    box-sizing:border-box;
+    padding:20px;
+    background-color:rgb(241, 188, 14);
+      
+    border-top: 1px solid black;
 }
 
         a:link {
@@ -161,8 +159,9 @@ background-color: black;
         
         a:hover::after{
             width:100%;
+            left:0%;
             height:3px;
-            background-color: rgb(18, 208, 208);
+            background-color: rgb(208, 18, 183);
             
             }
 #container{
@@ -227,4 +226,53 @@ max-width: 100%;
   }
 
 
+#container3{
+
+    
+    display: flex;
+    padding:5px;
+    justify-content: center;
+}
+
+#flexitem4{
+    width:50%;
+    background-color:rgb(2, 8, 35);
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+#flexitem5{
+    width:50%;
+    background-color: black;
+    color: white;
+    padding:5px;
+    margin: 5px;
+    
+}
+
+
+#container4{
+
+
+    display: flex;
+    padding:5px;
+    justify-content: center;
+}
+
+#flexitem6{
+    width:50%;
+    background-color: black;
+    color: white;
+    padding:5px;
+
+    
+}
+
+#flexitem7{
+    width:50%;
+    background-color:rgb(2, 8, 35);
+        display: flex;
+    justify-content: center;
+}
 

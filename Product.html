@@ -6,6 +6,9 @@
     <title>BabyBeeProducts</title>
     <link rel="stylesheet" href="Productcss.css" type="text/css">
     </link>
+
+
+
 </head>
 
 <body id="background">
@@ -22,11 +25,40 @@
             </div>
 
             <ul class="navbar">
-                <li class="menu"><a href="Home.html">Home</a></li>
-                <li class="menu"><a href="Product.html">Products</a></li>
-                <li class="menu"><a href="OrderPage.html">OrderCart</a></li>
-                <li class="menu"><a href="AboutUs.html">AboutUs</a></li>
-                <li class="menu"><a href="ContactUs.html">ContactUs</a></li>
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-home-48.png">
+                    <a href="Home.html">
+                         Home
+                    </a>
+                </li>
+                
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-t-shirt-48.png">
+                    <a href="Product.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-shopping-cart-256.png">
+                    <a href="OrderPage.html">
+                       Cart
+                    </a>
+                    
+                </li>
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-couple-64.png">
+                    <a href="AboutUs.html">
+                       AboutUs
+                    </a>
+                </li>
+                <li class="menu">
+                    <img style="width: 48px" src="Babyclothes/icons8-phone-64.png">
+                    <a href="ContactUs.html">
+                        ContactUs
+                    </a>
+                </li>
+            </ul>
             </ul>
             <div id="scrollbar">
                 <marquee direction="right">Free shipping on all orders above $100</marquee>
@@ -92,7 +124,10 @@
                     </div>
                     <div>
                         <input type="checkbox" id="Swimwear" name="Swimwear" value="Swimwear">
-                        <label for="Swimwear">Swimwear</label>
+                        <label for="Swimwear">Swimwear</label><br>
+
+                        <input type="reset" id="reset" name="reset" value="Reset"
+                            style="background-color: yellow; font-weight: bold;margin-top: 10px;font-family: 'Times New Roman'">
                     </div>
                 </form>
 
@@ -264,7 +299,15 @@
     <footer>
         <div id="footer">
 
-            <span>Copyright &copy</span>
+            <div style="text-align: right;">
+                <img style="height:40px" src="Babyclothes/downloadonapple.png">
+                <img style="height:40px" src="Babyclothes/1200px-Google_Play_Store_badge_EN.svg.png">
+
+            </div>
+            <hr style="border-top: 1px solid">
+            <div style="padding: 10px;">© 2021 BabyBee (SG) | Terms & conditions | Privacy | Cookies | Accessibility |
+                Modern Slavery
+                Act</div>
 
 
         </div>
@@ -272,6 +315,15 @@
 
 </body>
 
+<script>
+    var buttons = document.querySelectorAll("button");
+    for (i = 0; i < buttons.length; ++i) {
+        buttons[i].addEventListener("click", displayCartMessage);
+    }
 
+    function displayCartMessage() {
+        alert("Product added in cart successfully");
+    }
+</script>
 
 </html>
